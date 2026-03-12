@@ -33,7 +33,10 @@ public class DetectionController {
             String result = detectionService.analyzeImage(file);
             return ResponseEntity.ok(result);
         } catch (Exception e) {
-            return ResponseEntity.internalServerError().body("{\"error\": \"" + e.getMessage() + "\"}");
+            System.out.println("\n\n=== SECRET MESSAGE FROM THE SERVER ===");
+            System.out.println(e.getMessage());
+            System.out.println("======================================\n\n");
+            return ResponseEntity.internalServerError().body("{\"error\": \"Check the terminal!\"}");
         }
     }
 }

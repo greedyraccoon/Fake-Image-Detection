@@ -27,6 +27,7 @@ public class ImageDetectionService {
                 .uri(URI.create(apiUrl))
                 .header("Authorization", apiKey)
                 .header("Content-Type", "application/octet-stream")
+                .header("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64)")
                 .POST(HttpRequest.BodyPublishers.ofByteArray(imageBytes))
                 .build();
 
@@ -39,3 +40,5 @@ public class ImageDetectionService {
         return response.body();
     }
 }
+
+
