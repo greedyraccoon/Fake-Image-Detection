@@ -21,7 +21,8 @@ A full-stack web application that leverages machine learning to analyze images a
 2. Docker (Optional, for containerized execution).
 3. Java 17 and Maven (If running from source).
 
-### Note if it doesnt work change server.port in application properties to whatever port you like as 8080 is used by sql by default !
+### Note if it doesnt work change server.port in application properties to whatever port you like !
+### [Live hosted app](https://fake-image-detection-mjqy.onrender.com/) ps wait 1-1.5 mins as the app takes time to boot up 
 
 ### Method 1: Run via Docker (Recommended)
 You can pull and run the pre-built Docker image instantly. Remember to swap in your actual Hugging Face token!
